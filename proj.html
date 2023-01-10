@@ -1,0 +1,236 @@
+<!--  serach free websitet templates  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=" tihs is description">
+    <meta name="keywords" content="html, css , js , web development">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> GYM-NOS </title>
+    <link rel="stylesheet" href="css/proj.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&family=Baloo+Bhai+2:wght@600&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        /* css reset  */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('images/abs-1850926_1920.jpg');
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .left {
+
+            /* border: 4px solid red ; */
+            color: white;
+            display: inline-block;
+
+            position: absolute;
+            left: 34px;
+            top: 22px;
+            /*  can also be done with flashbox and float  */
+        }
+
+        .right {
+            /* border:4px solid yellow; */
+            color: white;
+            display: inline-block;
+
+            position: absolute;
+            right: 34px;
+            top: 22px;
+
+
+        }
+
+        .mid {
+            /* border: 4px solid green; */
+            color: white;
+
+            display: block;
+            width: 46%;
+            margin: 22px auto;
+
+
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 15px;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: grey;
+
+        }
+
+        .left img {
+            height: 78px;
+            width: 100px;
+            filter: invert(100%);
+        }
+
+
+
+
+        /* consider if your logo is black simiar to the background  */
+        /*  you can use the invert function  */
+        /*  black image -> white image  */
+        /* filter: invert(100%) */
+        /*  or white-> black   */
+
+        .left div {
+            text-align: center;
+            line-height: 19px;
+            font-size: 25px;
+
+        }
+
+
+        .btn {
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 3px 4px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+
+
+            /* the font family is alread sey we will put our fnt family here */
+            font-family: 'Baloo Bhai 2', cursive;
+
+        }
+
+        .btn:hover {
+            background-color: grey;
+
+        }
+
+
+        .conty {
+            border: 2px solid #7a7676;
+            margin: 31px 118px;
+            padding: 55px 31px;
+            width: 36%;
+            position: absolute;
+            top: 175px;
+            border-radius: 17px;
+        }
+
+
+
+        .forms input {
+            text-align: center;
+            display: block;
+            width: 452px;
+            padding: 0px;
+            border: 2px solid black;
+            border-radius: 12px;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 21px;
+            margin: 8px auto;
+        }
+
+        .conty h1{
+            text-align: center;
+        }
+
+
+
+        /*  to centre the button  */
+        .conty button{
+            display:block;
+            width: 93.5%;
+            margin: auto;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="images/download (1).jpg" alt="">
+            <div> GYM-NOS</div>
+        </div>
+        <!-- middle box for navbar   -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active"> Home </a> </li>
+                <li><a href="#" class="active"> About Us </a> </li>
+                <li><a href="#" class="active"> Fitness Calculator </a> </li>
+                <li><a href="#" classe="active"> Contact Us </a> </li>
+
+
+            </ul>
+        </div>
+        <!-- right box for buttons  -->
+        <div class="right">
+            <button class="btn"> Call us now </button>
+            <button class="btn"> Contact us </button>
+
+        </div>
+
+    </header>
+
+
+    <div class="conty">
+        <h1> Join the best gym of karachi now !</h1>
+        <!-- all details will go into no action .php -->
+        <form action="noaction.php">
+
+            <div class="forms">
+                <input type="text" name="" placeholder="Enter your name ">
+            </div>
+
+            <div class="forms">
+                <input type="text" name="" placeholder="Enter your age ">
+            </div>
+
+            <div class="forms">
+                <input type="text" name="" placeholder="Enter your gender ">
+            </div>
+            <div class="forms">
+                <input type="text" name="" placeholder="Enter your locality ">
+            </div>
+
+            <button class="btn"> Submit </button>
+
+
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
